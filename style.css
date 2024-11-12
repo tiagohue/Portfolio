@@ -14,25 +14,40 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+main {
+    text-align: center;
     padding: 20px;
 }
 
-/* Cabeçalho */
-header {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-header h1 {
+h1 {
     font-size: 2.5em;
     color: #fff;
 }
 
-header p {
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+p {
     font-size: 1.2em;
     color: #ddd;
 }
 
+/* Cabeçalho */
+header {
+    height: 75px;
+    width: 100vw;
+    text-align: center;
+    justify-content: end;
+    position: fixed;
+    backdrop-filter: blur(10px);
+}
+
+/* parte principal da pagina */
 #nome {
     width: 350px;
     display: inline-block;
@@ -43,17 +58,16 @@ header p {
     display: inline-block;
 }
 
+#about-me {
+    margin: 50px 0 50px 0;
+}
+
 /* Seção de Projetos */
 .projetos {
     width: 100%;
     max-width: 800px;
     text-align: center;
-}
-
-.projetos h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #fff;
+    padding: 20px;
 }
 
 /* Estilo para cada projeto */
@@ -96,6 +110,7 @@ footer {
     text-align: center;
     margin-top: 50px;
     color: #ddd;
+    padding: 20px;
 }
 
 footer p, footer a {
