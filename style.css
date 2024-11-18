@@ -45,8 +45,10 @@ header {
     background-color: rgba(0,0,0,0.2);
     position: fixed;
     backdrop-filter: blur(10px);
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 header h1 {
@@ -55,6 +57,25 @@ header h1 {
         -2px -2px 0px #333,
         2px -2px 0px #333,
         -2px 2px 0px #333;
+}
+
+header .espaco {
+    width: 60px;
+}
+
+header .barra-lateral {
+    width: 60px;
+}
+
+header .barra-lateral button {
+    background-color: rgba(0,0,0,0);
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    border: 0;
+}
+
+header .barra-lateral button:hover {
+    background-color: #555;
 }
 
 /* parte principal da pagina */
@@ -68,7 +89,7 @@ header h1 {
     display: inline-block;
 }
 
-#about-me {
+#sobre-mim {
     margin: 50px 0 50px 0;
 }
 
