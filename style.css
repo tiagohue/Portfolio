@@ -19,6 +19,7 @@ body {
 main {
     text-align: center;
     padding: 20px;
+    margin-top: 75px;
 }
 
 h1 {
@@ -41,10 +42,19 @@ p {
 header {
     height: 75px;
     width: 100vw;
-    text-align: center;
-    justify-content: end;
+    background-color: rgba(0,0,0,0.2);
     position: fixed;
     backdrop-filter: blur(10px);
+    display: grid;
+    place-items: center;
+}
+
+header h1 {
+    text-shadow: 
+        2px 2px 0px #333,
+        -2px -2px 0px #333,
+        2px -2px 0px #333,
+        -2px 2px 0px #333;
 }
 
 /* parte principal da pagina */
