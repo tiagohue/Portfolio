@@ -81,34 +81,29 @@ header .barra-lateral button:hover {
 
 /* barra lateral */
 #barra-lateral-div {
-    margin-top: 50px;
     height: 100%;
     width: 0;
     position: fixed;
     top: 0;
     left: 0;
+    background-color: #111;
     overflow-x: hidden;
-    transition: 0.2s;
-    background-color: rgba(0,0,0,0.2);
-    backdrop-filter: blur(10px);
+    transition: 0.3s; /* Animação suave */
+    padding-top: 60px;
 }
 
 #barra-lateral-div.open {
     width: 250px;
 }
 
-#barra-lateral-div div a {
+/* .barra-lateral a {
     padding: 10px 15px;
     text-decoration: none;
     font-size: 22px;
     color: white;
     display: block;
     transition: 0.3s;
-}
-
-#barra-lateral-div div a:hover {
-    background-color: #555;
-}
+} */
 
 
 
