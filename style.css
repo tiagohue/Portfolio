@@ -45,10 +45,8 @@ header {
     background-color: rgba(0,0,0,0.2);
     position: fixed;
     backdrop-filter: blur(10px);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
+    display: grid;
+    place-items: center;
 }
 
 header h1 {
@@ -58,54 +56,6 @@ header h1 {
         2px -2px 0px #333,
         -2px 2px 0px #333;
 }
-
-header .espaco {
-    width: 50px;
-}
-
-header .barra-lateral {
-    width: 50px;
-    padding-left: 10px;
-}
-
-header .barra-lateral button {
-    background-color: rgba(0,0,0,0);
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    border: 0;
-}
-
-header .barra-lateral button:hover {
-    background-color: #555;
-}
-
-/* barra lateral */
-#barra-lateral-div {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.3s; /* Animação suave */
-    padding-top: 60px;
-}
-
-#barra-lateral-div.open {
-    width: 250px;
-}
-
-/* .barra-lateral a {
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 22px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-} */
-
-
 
 /* parte principal da pagina */
 #nome {
@@ -118,7 +68,7 @@ header .barra-lateral button:hover {
     display: inline-block;
 }
 
-#sobre-mim {
+#about-me {
     margin: 50px 0 50px 0;
 }
 
