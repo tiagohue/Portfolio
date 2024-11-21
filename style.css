@@ -74,6 +74,10 @@ header h1 {
     margin: 50px 0 50px 0;
 }
 
+#sobre-mim p{
+    max-width: 800px;
+}
+
 /* Seção de Projetos */
 .projetos {
     width: 100%;
